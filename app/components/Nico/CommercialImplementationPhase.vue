@@ -109,7 +109,7 @@
                         <!-- 1.1 Business Consultation -->
                         <div
                             class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden flex flex-col">
-                            <NuxtImg src="/business-consultation.png" class="h-48 w-full object-cover"
+                            <NuxtImg src="/code-hero.jpg" class="h-48 w-full object-cover"
                                 alt="Business Consultation" />
                             <div class="p-6 flex flex-col gap-4">
                                 <h3 class="text-xl font-semibold text-[#002D72] flex items-center gap-2">
@@ -180,7 +180,7 @@
                         <!-- 1.2 Program Planning & Design -->
                         <div
                             class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden flex flex-col">
-                            <NuxtImg src="/program-planning.png" class="h-48 w-full object-cover"
+                            <NuxtImg src="/payment-hero.webp" class="h-48 w-full object-cover"
                                 alt="Program Planning" />
                             <div class="p-6 flex flex-col gap-4">
                                 <h3 class="text-xl font-semibold text-[#002D72] flex items-center gap-2">
