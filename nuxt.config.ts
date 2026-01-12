@@ -9,6 +9,12 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-11-11',
   components: true,
   runtimeConfig: {
+    public: {
+      // Base URL where large static videos are hosted (e.g. Cloudflare R2 public domain).
+      // Example: https://media.example.com
+      // If empty, falls back to local /public/videos.
+      videosBaseUrl: ''
+    },
     smtpHost: '',
     smtpPort: 587,
     smtpSecure: false,

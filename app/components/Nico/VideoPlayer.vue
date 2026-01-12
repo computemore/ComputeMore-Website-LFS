@@ -58,6 +58,7 @@
   import { VideoPlayer } from '@videojs-player/vue'
   import videojs from 'video.js'
   import 'video.js/dist/video-js.css'
+  import { useRuntimeConfig } from '#app'
 
   type VideoJsPlayer = ReturnType<typeof videojs>
 
@@ -69,11 +70,14 @@
       VideoPlayer
     },
     setup() {
+      const runtimeConfig = useRuntimeConfig()
       const player = shallowRef<VideoJsPlayer>()
       const activeVideo = ref<'web' | 'ussd'>('web')
 
       const videoSrc = computed(() => {
-        return activeVideo.value === 'web' ? '/videos/Tuts.mp4' : '/videos/Tuts2.mp4'
+        const base = String(runtimeConfig.public?.videosBaseUrl || '').replace(/\/+$/, '')
+        const path = activeVideo.value === 'web' ? '/videos/Tuts.mp4' : '/videos/Tuts2.mp4'
+        return base ? `${base}${path}` : path
       })
 
       const handleMounted = (payload: any) => {
