@@ -1,0 +1,10 @@
+ComputeMore Website Commit Notes
+Release Date: January 5, 2026
+===================================
+
+## 2026-01-05
+
+### Changed
+- Added new sections to the Ecoride Privacy Policy addressing cross-border data transfers, indemnity for unauthorized data breaches, limitation of liability for data leakage, disclaimer, amendments to the policy, and governing law.
+- Included a section on lost property and governing law/arbitration in the Ecoride Terms of Service.
+- Added contact us functionality to the website

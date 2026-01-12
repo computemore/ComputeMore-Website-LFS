@@ -1,0 +1,24 @@
+ComputeMore Website Commit Notes
+Release Date: December 13, 2025
+===================================
+
+## 2025-12-13
+
+### Changed
+- Updated Hero Section Messaging:
+  - Changed the main headline to "Advancing the Future of Corporate Technology in Africa".
+  - Updated the subheadline to "Enterprise solutions engineered for scalability, security, and performance in the ever-expanding digital ecosystem".
+- Revised Call-to-Action Button Text:
+  - Modified the button text in the Hero section to "Get Started".
+- Enhanced Newsletter Subscription Section:
+  - Updated the headline to "Subscribe to Updates and Offers from ComputeMore".
+
+### Added
+- A few images in public/Team and public/Internal
+- Resized all images in public/Team and public/Internal to optimize loading times.
+- REsized images that are the scroller images on the homepage to improve performance and compatibility with allocated div space.
+
+### Fixed
+- Corrected minor typos in the About Us section.
+- Adjusted layout issues in the Services section for better responsiveness on mobile devices.
+- Fixed the Mobile Hamburger Menu to ensure it opens and closes correctly on all screen sizes.

@@ -1,0 +1,19 @@
+ComputeMore Website Commit Notes
+Release Date: December 15, 2025
+===================================
+
+## 2025-12-15
+
+### Changed
+- Updated Team Page Heading:
+  - Changed the main headline to "Meet the People Behind Our Success".
+- Updated Contact Page Heading:
+  - Changed the main headline to "Get in Touch".
+- Modified About Us Page Sections:
+  - Added padding to the Company Values section for better spacing.
+  - Added top padding to the Mission & Vision section for improved layout.
+  - Added negative top margin to the Mission & Vision content container to enhance visual separation.
+  - Added negative top margin to the Features Grid to improve alignment with surrounding content. 
+
+### Added
+- Changed all Services Page and About Us Page headings to use the new consistent styling with larger font sizes and improved tracking for better readability.
