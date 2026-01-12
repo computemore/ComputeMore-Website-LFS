@@ -32,7 +32,6 @@
         :key="activeVideo"
         class="video-player vjs-big-play-centered w-full max-w-full aspect-video bg-black rounded-lg overflow-hidden ring-1 ring-slate-900/10 shadow-xl"
         :src="videoSrc"
-        crossorigin="anonymous"
         playsinline
         controls
         :volume="0.6"
