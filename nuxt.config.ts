@@ -5,15 +5,6 @@ export default defineNuxtConfig({
     format: ['webp']
   },
   devtools: { enabled: true },
-  vite: {
-    server: {
-      hmr: {
-        host: 'localhost',
-        port: 24679,
-        clientPort: 24679,
-      },
-    },
-  },
   css: ["~/assets/css/global.css", "~/assets/css/main.css"],
   compatibilityDate: '2025-11-11',
   components: true,

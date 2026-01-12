@@ -238,7 +238,18 @@
                         </div>
                     </div>
                 </section>
+                
+                <!-- Integration Note -->
+                <div class="bg-blue-50 rounded-xl p-4 border border-blue-200 flex items-center gap-3">
+                    <UIcon name="i-heroicons-puzzle-piece" class="w-6 h-6 text-blue-600 shrink-0" />
+                    <p class="text-gray-700 text-lg sm:text-lg md:text-lg">
+                        <strong>Total Project Cost:
+                                        
+                                MWK151,927,500.00</strong> (All Project Phases Combined)
+                    </p>
+                </div>
 
+                <section class="space-y-8"></section>
 
             </div>
         </UCard>

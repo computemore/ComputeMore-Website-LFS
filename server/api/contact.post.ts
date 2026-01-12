@@ -37,7 +37,10 @@ export default defineEventHandler(async (event) => {
 
   const smtpHost = String(config.smtpHost || '')
   const smtpPort = Number(config.smtpPort || 587)
-  const smtpSecure = Boolean(config.smtpSecure || false)
+  const smtpSecure =
+    typeof config.smtpSecure === 'boolean'
+      ? config.smtpSecure
+      : String(config.smtpSecure || 'false').toLowerCase() === 'true'
   const smtpUser = String(config.smtpUser || '')
   const smtpPass = String(config.smtpPass || '')
   const smtpFrom = String(config.smtpFrom || '')
@@ -57,6 +60,10 @@ export default defineEventHandler(async (event) => {
     auth: smtpUser && smtpPass ? { user: smtpUser, pass: smtpPass } : undefined
   })
 
+  if (process.env.NODE_ENV !== 'production') {
+    await transporter.verify()
+  }
+
   const requestIp =
     (getRequestHeader(event, 'x-forwarded-for') || '').split(',')[0]?.trim() ||
     getRequestHeader(event, 'x-real-ip') ||
@@ -74,13 +81,17 @@ export default defineEventHandler(async (event) => {
     .filter(Boolean)
     .join('\n')
 
-  await transporter.sendMail({
+  const info = await transporter.sendMail({
     from: smtpFrom,
     to: contactTo,
     replyTo: `${name} <${email}>`,
     subject: `Website message: ${subject}`,
     text
   })
+
+  if (process.env.NODE_ENV !== 'production') {
+    return { ok: true, messageId: info.messageId }
+  }
 
   return { ok: true }
 })

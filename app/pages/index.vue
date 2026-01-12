@@ -248,6 +248,15 @@ const images = [
 
 const team = [
   {
+    name: "Zikani Mwase Nyirenda",
+    role: "Lead Full-Stack Architect & Engineer",
+    image: "/team/zikani.jpeg",
+    bio: "Zikani leads full-stack architecture and engineering efforts, driving the design and implementation of scalable, robust software solutions.",
+    social: { linkedin: "https://linkedin.com/in/zikani03",
+      github: "https://github.com/zikani03"
+     }
+  },
+  {
     name: "Christina Namalomba",
     role: "Business Development Manager",
     image: "/team/tina.jpeg",

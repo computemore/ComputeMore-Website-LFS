@@ -17,79 +17,7 @@
                     </div>
 
                     <!-- Title -->
-                    <h2 class="text-3xl font-bold text-gray-800 tracking-wide">Engagement Process Breakdown</h2>
-
-                    <!-- Process Steps Icons + Text (Parallel Flow with Arrows) -->
-                    <ul class="relative flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 mt-12">
-                        <!-- Step 1 -->
-                        <li class="flex flex-col items-center gap-2 relative">
-                            <NuxtImg src="/consultation.png" class="h-16 w-16" alt="Consultation" />
-                            <span class="text-gray-800 font-semibold text-center">Consultation Phase</span>
-                        </li>
-
-                        <!-- Connector (vertical on small screens, horizontal on md+) -->
-                        <li class="flex items-center justify-center" aria-hidden="true">
-                            <!-- Small screens: vertical arrow -->
-                            <svg class="h-12 w-6 text-gray-300 animate-pulse md:hidden" viewBox="0 0 24 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2V26" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                <path d="M6 26L12 32L18 26" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-
-                            <!-- md+: horizontal arrow -->
-                            <svg class="h-6 w-20 text-gray-300 animate-pulse hidden md:block" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 12H56" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                <path d="M56 6L64 12L56 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </li>
-
-                        <!-- Step 2 -->
-                        <li class="flex flex-col items-center gap-2 relative">
-                            <NuxtImg src="/planning.png" class="h-16 w-16" alt="Planning" />
-                            <span class="text-gray-800 font-semibold text-center">Program Planning & Design</span>
-                        </li>
-
-                        <!-- Connector (vertical on small screens, horizontal on md+) -->
-                        <li class="flex items-center justify-center" aria-hidden="true">
-                            <!-- Small screens: vertical arrow -->
-                            <svg class="h-12 w-6 text-gray-300 animate-pulse md:hidden" viewBox="0 0 24 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2V26" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                <path d="M6 26L12 32L18 26" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-
-                            <!-- md+: horizontal arrow -->
-                            <svg class="h-6 w-20 text-gray-300 animate-pulse hidden md:block" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 12H56" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                <path d="M56 6L64 12L56 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </li>
-
-                        <!-- Step 3 -->
-                        <li class="flex flex-col items-center gap-2 relative">
-                            <NuxtImg src="/commercial.png" class="h-16 w-16" alt="Commercial Model" />
-                            <span class="text-gray-800 font-semibold text-center">Commercial Model</span>
-                        </li>
-
-                        <!-- Connector (vertical on small screens, horizontal on md+) -->
-                        <li class="flex items-center justify-center" aria-hidden="true">
-                            <!-- Small screens: vertical arrow -->
-                            <svg class="h-12 w-6 text-gray-300 animate-pulse md:hidden" viewBox="0 0 24 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2V26" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                <path d="M6 26L12 32L18 26" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-
-                            <!-- md+: horizontal arrow -->
-                            <svg class="h-6 w-20 text-gray-300 animate-pulse hidden md:block" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 12H56" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                <path d="M56 6L64 12L56 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </li>
-
-                        <!-- Step 4 -->
-                        <li class="flex flex-col items-center gap-2">
-                            <NuxtImg src="/implementation.png" class="h-16 w-16" alt="Implementation" />
-                            <span class="text-gray-800 font-semibold text-center">Implementation</span>
-                        </li>
-                    </ul>
+                    <h2 class="text-3xl font-bold text-gray-800 tracking-wide">NICO Life Loyalty: Consultation Phase</h2>
 
                     <!-- Parallel workflow note -->
                     <p class="mt-6 text-center text-gray-600 italic max-w-2xl mx-auto">
@@ -112,7 +40,7 @@
                             <NuxtImg src="/business-consultation.png" class="h-48 w-full object-cover"
                                 alt="Business Consultation" />
                             <div class="p-6 flex flex-col gap-4">
-                                <h3 class="text-xl font-semibold text-blue-600 flex items-center gap-2">
+                                <h3 class="text-xl font-semibold text-[#002D72] flex items-center gap-2">
                                     <UIcon name="i-heroicons-briefcase" class="w-6 h-6" /> 1.1 Business Consultation
                                 </h3>
                                 <ul class="space-y-2 text-gray-700">
@@ -213,7 +141,7 @@
                         </div>
                     </div>
                 </section>
-
+                <section class="space-y-8"></section>
 
             </div>
         </UCard>

@@ -1,11 +1,17 @@
 <script setup lang="ts">
-import NicolifePage from "~/pages/nicolife/index.vue";
-
 definePageMeta({
   layout: 'life',
 })
 </script>
 
+<script lang="ts">
+import NicolifeFlow from "~/components/Nico/NicolifeFlow.vue";
+
+export default {
+  components: { NicolifeFlow }
+}
+</script>
+
 <template>
-  <NicolifePage />
+  <NicolifeFlow />
 </template>
