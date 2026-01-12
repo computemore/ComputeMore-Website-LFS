@@ -9,7 +9,7 @@
         </div>
 
         <div
-            class="absolute bottom-36 md:bottom-36 left-1/2 md:left-16 transform -translate-x-1/2 md:-translate-x-0 w-10/12 sm:w-3/4 md:max-w-lg bg-white/95 rounded-xl p-4 sm:p-6 text-[#002D72] z-20 flex flex-col gap-4 shadow-lg">
+            class="absolute bottom-24 md:bottom-36 left-1/2 md:left-16 transform -translate-x-1/2 md:-translate-x-0 w-10/12 sm:w-3/4 md:max-w-lg bg-white/95 rounded-xl p-4 sm:p-6 text-[#002D72] z-20 flex flex-col gap-4 shadow-lg">
             <!-- Small logo inside overlay -->
             <!-- <NuxtImg src="/nl-logo.png" densities="x1 x2" class="w-auto object-contain" alt="logo" /> -->
             <a href="https://nico-life.com" target="_blank" rel="noopener noreferrer" aria-label="Nico Life Website">
