@@ -6,8 +6,15 @@
                 <!-- Header -->
                 <header class="space-y-6 text-center relative">
                     <!-- Logo -->
-                    <NuxtImg src="/Main-Logo_2.png" format="webp" densities="x1 x2"
-                        class="h-20 w-auto mx-auto object-contain" alt="logo" />
+                    <div class="flex items-center justify-center gap-6">
+                        <NuxtLink to="/" aria-label="ComputeMore Website Home">
+                            <NuxtImg src="/Main-Logo_2.png" format="webp" densities="x1 x2" class="h-20 w-auto object-contain" alt="logo" />
+                        </NuxtLink>
+
+                        <a href="https://nico-life.com" target="_blank" rel="noopener noreferrer" aria-label="Nico Life Website">
+                            <NuxtImg src="/nl-logo.png" densities="x1 x2" class="h-16 w-auto object-contain" alt="Nico Life logo" />
+                        </a>
+                    </div>
 
                     <!-- Title -->
                     <h2 class="text-3xl font-bold text-gray-800 tracking-wide">Engagement Process Breakdown</h2>
