@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   image:{
     format: ['webp']
   },
-  devtools: { enabled: true },
+  devtools: { enabled: process.env.NODE_ENV !== 'production' },
   css: ["~/assets/css/global.css", "~/assets/css/main.css"],
   compatibilityDate: '2025-11-11',
   components: true,

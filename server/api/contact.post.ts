@@ -48,7 +48,7 @@ export default defineEventHandler(async (event) => {
 
   if (!smtpHost || !smtpPort || !smtpFrom || !contactTo) {
     throw createError({
-      statusCode: 500,
+      statusCode: 503,
       statusMessage: 'Email service is not configured'
     })
   }
@@ -60,7 +60,7 @@ export default defineEventHandler(async (event) => {
     auth: smtpUser && smtpPass ? { user: smtpUser, pass: smtpPass } : undefined
   })
 
-  if (process.env.NODE_ENV !== 'production') {
+  if (import.meta.dev) {
     await transporter.verify()
   }
 
@@ -81,16 +81,25 @@ export default defineEventHandler(async (event) => {
     .filter(Boolean)
     .join('\n')
 
-  const info = await transporter.sendMail({
-    from: smtpFrom,
-    to: contactTo,
-    replyTo: `${name} <${email}>`,
-    subject: `Website message: ${subject}`,
-    text
-  })
+  let info: { messageId?: string } | undefined
+  try {
+    info = await transporter.sendMail({
+      from: smtpFrom,
+      to: contactTo,
+      replyTo: `${name} <${email}>`,
+      subject: `Website message: ${subject}`,
+      text
+    })
+  } catch (error) {
+    console.error('[api/contact] Failed to send email', error)
+    throw createError({
+      statusCode: 502,
+      statusMessage: 'Failed to send message. Please try again later.'
+    })
+  }
 
-  if (process.env.NODE_ENV !== 'production') {
-    return { ok: true, messageId: info.messageId }
+  if (import.meta.dev) {
+    return { ok: true, messageId: info?.messageId }
   }
 
   return { ok: true }
