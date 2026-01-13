@@ -1,23 +1,24 @@
 <template>
-    <UContainer class="m-2">
-        <UCard variant="soft" class="bg-white min-h-[297mm] mb-6  p-12">
-            <div class="space-y-20">
+    <UContainer class="m-0 px-0 sm:px-4 max-w-none">
+        <div class="w-full overflow-x-auto">
+            <UCard variant="soft" class="bg-white min-h-[297mm] mb-6 p-4 sm:p-12 text-sm sm:text-base">
+                <div class="space-y-12 sm:space-y-20">
 
                 <!-- Header -->
                 <header class="space-y-6 text-center relative">
                     <!-- Logo -->
-                    <div class="flex items-center justify-center gap-6">
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
                         <NuxtLink to="/" aria-label="ComputeMore Website Home">
                             <NuxtImg src="/Main-Logo_2.png" format="webp" densities="x1 x2" class="h-20 w-auto object-contain" alt="logo" />
                         </NuxtLink>
 
                         <a href="https://nico-life.com" target="_blank" rel="noopener noreferrer" aria-label="Nico Life Website">
-                            <NuxtImg src="/nl-logo.png" densities="x1 x2" class="h-32 w-auto object-contain" alt="Nico Life logo" />
+                            <NuxtImg src="/nl-logo.png" densities="x1 x2" class="h-20 sm:h-32 w-auto object-contain" alt="Nico Life logo" />
                         </a>
                     </div>
 
                     <!-- Title -->
-                    <h2 class="text-3xl font-bold text-gray-800 tracking-wide">NICO Life Loyalty: Engagement Process Breakdown</h2>
+                    <h2 class="text-xl sm:text-3xl font-bold text-gray-800 tracking-wide">NICO Life Loyalty: Engagement Process Breakdown</h2>
 
                     <!-- Process Steps Icons + Text (Parallel Flow with Arrows) -->
                     <ul class="relative flex flex-col md:flex-row justify-center md:justify-evenly items-center gap-6 mt-12 w-full max-w-5xl mx-auto">
@@ -71,7 +72,7 @@
                     </ul>
 
                     <!-- Parallel workflow note -->
-                    <p class="mt-6 text-center text-gray-600 italic max-w-2xl mx-auto">
+                    <p class="mt-6 text-center text-gray-600 italic max-w-2xl mx-auto text-sm sm:text-base">
                         In what is to be presented below, the Consultation Phase and Program Planning & Design
                         steps occur in parallel to each other to expedite the overall engagement process. It is important to state that continual engagement and feedback loops act as a secondary quality-control mechanism, to ensure that your needs are prioritised within the project scope.
                     </p>
@@ -91,15 +92,15 @@
                             <NuxtImg src="/Main-Logo_2.png" format="webp" densities="x1 x2" class="h-20 w-auto object-contain" alt="logo" />
                         </NuxtLink>
                     </div> -->
-                    <h2 class="text-3xl font-bold text-gray-800 tracking-wide">Who Are We?</h2>
-                    <p class="text-gray-600 max-w-3xl mx-auto">
+                    <h2 class="text-xl sm:text-3xl font-bold text-gray-800 tracking-wide">Who Are We?</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">
                         ComputeMore is a full-service technology powerhouse headquartered in Malawi, delivering innovative solutions across software development, business intelligence, networking, and IT outsourcing. Our team combines deep technical expertise with strategic business acumen to drive digital transformation.
                     </p>
                 </header>
 
                 <!-- Strategic Advantages Section -->
                 <section class="space-y-8">
-                    <h2 class="text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
+                    <h2 class="text-xl sm:text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
                         <UIcon name="i-heroicons-rocket-launch" class="w-8 h-8 text-[#002D72]" />
                         Strategic Advantages & Competitive Edge
                     </h2>
@@ -112,7 +113,7 @@
                                     <UIcon name="i-heroicons-cloud" class="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-gray-800 text-lg">End-to-end Development with Managed DevOps</h4>
+                                    <h4 class="font-semibold text-gray-800 text-base sm:text-lg">End-to-end Development with Managed DevOps</h4>
                                     <p class="text-gray-600 mt-1">Access to cloud and dedicated deployment environments with continuous integration and delivery pipelines.</p>
                                 </div>
                             </div>
@@ -125,7 +126,7 @@
                                     <UIcon name="i-heroicons-device-phone-mobile" class="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-gray-800 text-lg">Multimodal Programming Expertise</h4>
+                                    <h4 class="font-semibold text-gray-800 text-base sm:text-lg">Multimodal Programming Expertise</h4>
                                     <p class="text-gray-600 mt-1">Proficiency in web, mobile, desktop, and embedded systems development across multiple platforms.</p>
                                 </div>
                             </div>
@@ -138,7 +139,7 @@
                                     <UIcon name="i-heroicons-cog-8-tooth" class="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-gray-800 text-lg">Full-Service Technology Powerhouse</h4>
+                                    <h4 class="font-semibold text-gray-800 text-base sm:text-lg">Full-Service Technology Powerhouse</h4>
                                     <p class="text-gray-600 mt-1">Integrated development, business intelligence, networking, and IT outsourcing under one roof.</p>
                                 </div>
                             </div>
@@ -151,7 +152,7 @@
                                     <UIcon name="i-heroicons-user-group" class="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-gray-800 text-lg">High-Value Access & Networks</h4>
+                                    <h4 class="font-semibold text-gray-800 text-base sm:text-lg">High-Value Access & Networks</h4>
                                     <p class="text-gray-600 mt-1">Founders' strategic ties fast-track adoption, partnerships, and funding opportunities.</p>
                                 </div>
                             </div>
@@ -164,7 +165,7 @@
                                     <UIcon name="i-heroicons-arrows-pointing-out" class="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-gray-800 text-lg">Agile & Scalable Model</h4>
+                                    <h4 class="font-semibold text-gray-800 text-base sm:text-lg">Agile & Scalable Model</h4>
                                     <p class="text-gray-600 mt-1">Easily adaptable methodologies across industries and geographies for rapid delivery.</p>
                                 </div>
                             </div>
@@ -177,7 +178,7 @@
                                     <UIcon name="i-heroicons-scale" class="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-gray-800 text-lg">Deep Technical & Legal Expertise</h4>
+                                    <h4 class="font-semibold text-gray-800 text-base sm:text-lg">Deep Technical & Legal Expertise</h4>
                                     <p class="text-gray-600 mt-1">Strong balance of innovation and compliance ensuring regulatory adherence.</p>
                                 </div>
                             </div>
@@ -190,7 +191,7 @@
                                     <UIcon name="i-heroicons-map-pin" class="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-gray-800 text-lg">Localized Impact</h4>
+                                    <h4 class="font-semibold text-gray-800 text-base sm:text-lg">Localized Impact</h4>
                                     <p class="text-gray-600 mt-1">Tailored solutions designed for Malawi's unique infrastructure, policies, and socio-economic context – ensuring relevance and sustainability.</p>
                                 </div>
                             </div>
@@ -200,7 +201,7 @@
 
                 <!-- Technical Infrastructure Section -->
                 <section class="space-y-8">
-                    <h2 class="text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
+                    <h2 class="text-xl sm:text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
                         <UIcon name="i-heroicons-server-stack" class="w-8 h-8 text-[#002D72]" />
                         Technical Infrastructure & Experience
                     </h2>
@@ -286,12 +287,12 @@
         </UCard>
 
         <!-- Page 3: Team Leads -->
-        <UCard variant="soft" class="bg-white min-h-[297mm] mb-6 p-12">
+        <UCard variant="soft" class="bg-white min-h-[297mm] mb-6 p-4 sm:p-12 text-sm sm:text-base">
             <div class="space-y-16">
 
                 <!-- Header -->
                 <header class="space-y-6 text-center">
-                    <h2 class="text-3xl font-bold text-gray-800 tracking-wide">Meet Our Leadership Team</h2>
+                    <h2 class="text-xl sm:text-3xl font-bold text-gray-800 tracking-wide">Meet Our Leadership Team</h2>
                     <p class="text-gray-600 max-w-2xl mx-auto">
                         A dedicated team of professionals combining technical excellence with business acumen to deliver exceptional results.
                     </p>
@@ -299,7 +300,7 @@
 
                 <!-- Team Section -->
                 <section class="space-y-8">
-                    <h2 class="text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
+                    <h2 class="text-xl sm:text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
                         <UIcon name="i-heroicons-users" class="w-8 h-8 text-[#002D72]" />
                         Team Leads
                     </h2>
@@ -314,7 +315,7 @@
                                 </div>
                             </div>
                             <div class="p-6 flex flex-col gap-3">
-                                <h3 class="text-xl font-bold text-gray-800">Zikani Nyirenda Mwase</h3>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-800">Zikani Nyirenda Mwase</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
                                     Over 10 years of experience in Frontend and Backend Design. A prolific contributor with 400+ repositories on GitHub, specializing in scalable architectures and modern development practices.
                                 </p>
@@ -338,7 +339,7 @@
                                 </div>
                             </div>
                             <div class="p-6 flex flex-col gap-3">
-                                <h3 class="text-xl font-bold text-gray-800">Paul Namalomba</h3>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-800">Paul Namalomba</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
                                     4 years of hands-on experience in C++, C# ASP.NET, PostgreSQL, Redis, and Backend Engine development. Drives innovation with 25+ repositories showcasing cutting-edge solutions.
                                 </p>
@@ -362,7 +363,7 @@
                                 </div>
                             </div>
                             <div class="p-6 flex flex-col gap-3">
-                                <h3 class="text-xl font-bold text-gray-800">Andy Kewo</h3>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-800">Andy Kewo</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
                                     4 years of legal experience with Sauti Lawyers, specializing in corporate law, regulatory compliance, and contract negotiations. Ensures all operations meet legal and ethical standards.
                                 </p>
@@ -386,7 +387,7 @@
                                 </div>
                             </div>
                             <div class="p-6 flex flex-col gap-3">
-                                <h3 class="text-xl font-bold text-gray-800">Chadwick Chihana</h3>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-800">Chadwick Chihana</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
                                     2 years of experience as an Auditor, bringing financial rigor and transparency to all operations. Manages budgeting, financial reporting, and fiscal compliance.
                                 </p>
@@ -405,7 +406,7 @@
 
                 <!-- Footer Note -->
                 <div class="bg-gradient-to-r from-[#002D72] to-blue-800 rounded-2xl p-8 text-center text-white">
-                    <h3 class="text-2xl font-bold mb-3">Ready to Partner with Us?</h3>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-3">Ready to Partner with Us?</h3>
                     <p class="text-blue-100 max-w-2xl mx-auto">
                         Our team is committed to delivering excellence at every stage of your project. Let's build something extraordinary together.
                     </p>
@@ -415,20 +416,20 @@
         </UCard>
 
         <!-- Page 4: Research-Backed Value Proposition -->
-        <UCard variant="soft" class="bg-white min-h-[297mm] mb-6 p-12">
+        <UCard variant="soft" class="bg-white min-h-[297mm] mb-6 p-4 sm:p-12 text-sm sm:text-base">
             <div class="space-y-16">
 
                 <!-- Header -->
                 <header class="space-y-6 text-center">
-                    <h2 class="text-3xl font-bold text-gray-800 tracking-wide">Research-Backed Value Proposition</h2>
-                    <p class="text-gray-600 max-w-3xl mx-auto">
+                    <h2 class="text-xl sm:text-3xl font-bold text-gray-800 tracking-wide">Research-Backed Value Proposition</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">
                         Our loyalty program design is grounded in peer-reviewed research demonstrating the measurable impact of customer retention and engagement strategies in the insurance sector.
                     </p>
                 </header>
 
                 <!-- Profit Multiplier Section with Circular Progress -->
                 <section class="space-y-8">
-                    <h2 class="text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
+                    <h2 class="text-xl sm:text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
                         <UIcon name="i-heroicons-chart-bar" class="w-8 h-8 text-[#002D72]" />
                         The Retention Profit Multiplier
                     </h2>
@@ -476,7 +477,7 @@
                                 </svg>
                                 <!-- Center text -->
                                 <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
-                                    <span class="text-5xl font-bold text-[#002D72]">5%</span>
+                                    <span class="text-4xl sm:text-5xl font-bold text-[#002D72]">5%</span>
                                     <span class="text-sm text-gray-600 mt-1">Retention Improvement</span>
                                 </div>
                             </div>
@@ -495,7 +496,7 @@
                         <!-- Explanation -->
                         <div class="space-y-4">
                             <div class="bg-gradient-to-br from-green-50 to-white rounded-2xl p-6 shadow-md border border-green-100">
-                                <h3 class="text-xl font-bold text-green-700 mb-3">25–100% Profitability Improvement</h3>
+                                <h3 class="text-lg sm:text-xl font-bold text-green-700 mb-3">25–100% Profitability Improvement</h3>
                                 <p class="text-gray-700 leading-relaxed">
                                     Research demonstrates that a <strong>5% improvement in customer retention rates</strong> yields between <strong>25% and 100% improvement</strong> in relevant profitability measures for insurance companies.
                                 </p>
@@ -516,7 +517,7 @@
 
                 <!-- Research Evidence Section -->
                 <section class="space-y-8">
-                    <h2 class="text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
+                    <h2 class="text-xl sm:text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
                         <UIcon name="i-heroicons-academic-cap" class="w-8 h-8 text-[#002D72]" />
                         Research Evidence & Key Metrics
                     </h2>
@@ -604,7 +605,7 @@
 
                 <!-- Service Quality & Trust Section -->
                 <section class="space-y-8">
-                    <h2 class="text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
+                    <h2 class="text-xl sm:text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
                         <UIcon name="i-heroicons-shield-check" class="w-8 h-8 text-[#002D72]" />
                         Service Quality, Trust & Loyalty Connection
                     </h2>
@@ -678,7 +679,7 @@
 
                 <!-- References -->
                 <section class="space-y-4">
-                    <h3 class="text-xl font-bold text-gray-800 border-b border-gray-200 pb-2">References</h3>
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 border-b border-gray-200 pb-2">References</h3>
                     <ol class="list-decimal list-inside space-y-2 text-sm text-gray-600">
                         <li>Ebrahimi, A., Askarifar, K., & Nikbakht, A. (2023). "Designing and evaluating insurance customer loyalty programs for different customer groups based on their lifetime value." <em>Journal of Financial Services Marketing</em>. doi: 10.1057/s41264-023-00242-8</li>
                         <li>Casquinho, C. "Consulting Project: Boosting Customer Loyalty by Increasing Brand Engagement and Offering Value-Added Services." ProQuest Dissertations. Available: <a href="https://search.proquest.com/openview/916dce945849fb60e6a8347c5418c83e" class="text-blue-600 hover:underline">ProQuest</a></li>
@@ -692,15 +693,18 @@
 
                 <!-- Footer CTA -->
                 <div class="bg-gradient-to-r from-[#002D72] to-blue-800 rounded-2xl p-8 text-center text-white">
-                    <h3 class="text-2xl font-bold mb-3">Evidence-Driven. Results-Focused.</h3>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-3">Evidence-Driven. Results-Focused.</h3>
                     <p class="text-blue-100 max-w-2xl mx-auto">
                         The NICO Life loyalty platform will be designed to ensure that every feature is optimized for maximum retention and profitability impact for NICO Life and it's potential partner stores.
                     </p>
                 </div>
                 <section class="space-y-8"></section>
 
-            </div>
-        </UCard>
+                </div>
+
+                <QuickScrollButtons />
+            </UCard>
+        </div>
     </UContainer>
 </template>
 

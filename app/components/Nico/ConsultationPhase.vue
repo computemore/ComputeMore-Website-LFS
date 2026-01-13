@@ -1,7 +1,8 @@
 <template>
-    <UContainer class="m-2">
-        <UCard variant="soft" class="bg-white min-h-[297mm] mb-6  p-12">
-            <div class="space-y-20">
+    <UContainer class="m-0 px-0 sm:px-4 max-w-none">
+        <div class="w-full overflow-x-auto">
+            <UCard variant="soft" class="bg-white min-h-[297mm] mb-6 p-4 sm:p-12 text-sm sm:text-base">
+                <div class="space-y-12 sm:space-y-20">
 
                 <!-- Header -->
                 <header class="space-y-6 text-center relative">
@@ -17,7 +18,7 @@
                     </div>
 
                     <!-- Title -->
-                    <h2 class="text-3xl font-bold text-gray-800 tracking-wide">NICO Life Loyalty: Consultation Phase</h2>
+                    <h2 class="text-xl sm:text-3xl font-bold text-gray-800 tracking-wide">NICO Life Loyalty: Consultation Phase</h2>
 
                     <!-- Parallel workflow note -->
                     <p class="mt-6 text-center text-gray-600 italic max-w-2xl mx-auto">
@@ -28,7 +29,7 @@
 
                 <!-- Consultation Phase Details -->
                 <section class="space-y-16">
-                    <h2 class="text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
+                    <h2 class="text-xl sm:text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
                         <UIcon name="i-heroicons-chat-bubble-oval-left" class="w-8 h-8 text-[#002D72]" />
                         1. Consultation & Planning Phase
                     </h2>
@@ -39,8 +40,8 @@
                             class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden flex flex-col">
                             <NuxtImg src="/business-consultation.png" class="h-48 w-full object-cover"
                                 alt="Business Consultation" />
-                            <div class="p-6 flex flex-col gap-4">
-                                <h3 class="text-xl font-semibold text-[#002D72] flex items-center gap-2">
+                            <div class="p-4 sm:p-6 flex flex-col gap-4">
+                                <h3 class="text-lg sm:text-xl font-semibold text-[#002D72] flex items-center gap-2">
                                     <UIcon name="i-heroicons-briefcase" class="w-6 h-6" /> 1.1 Business Consultation
                                 </h3>
                                 <ul class="space-y-2 text-gray-700">
@@ -76,15 +77,15 @@
                                 </ul>
                                 <div class="mt-4 flex gap-2 flex-wrap">
                                     <span
-                                        class="flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+                                        class="flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                                         <UIcon name="i-heroicons-check" class="w-4 h-4" /> Approved Output
                                     </span>
                                     <span
-                                        class="flex items-center gap-1 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
+                                        class="flex items-center gap-1 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                                         <UIcon name="i-heroicons-clock" class="w-4 h-4" /> Timeline
                                     </span>
                                     <span
-                                        class="flex items-center gap-1 bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">
+                                        class="flex items-center gap-1 bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                                         <UIcon name="i-heroicons-currency-dollar" class="w-4 h-4" /> Budget
                                     </span>
                                 </div>
@@ -96,8 +97,8 @@
                             class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden flex flex-col">
                             <NuxtImg src="/program-planning.png" class="h-48 w-full object-cover"
                                 alt="Program Planning" />
-                            <div class="p-6 flex flex-col gap-4">
-                                <h3 class="text-xl font-semibold text-[#002D72] flex items-center gap-2">
+                            <div class="p-4 sm:p-6 flex flex-col gap-4">
+                                <h3 class="text-lg sm:text-xl font-semibold text-[#002D72] flex items-center gap-2">
                                     <UIcon name="i-heroicons-pencil-square" class="w-6 h-6 text-[#002D72]" /> 1.2 Program Planning & System
                                     Design
                                 </h3>
@@ -125,15 +126,15 @@
                                 </ul>
                                 <div class="mt-4 flex gap-2 flex-wrap">
                                     <span
-                                        class="flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+                                        class="flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                                         <UIcon name="i-heroicons-check" class="w-4 h-4" /> Approved Output
                                     </span>
                                     <span
-                                        class="flex items-center gap-1 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
+                                        class="flex items-center gap-1 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                                         <UIcon name="i-heroicons-clock" class="w-4 h-4" /> Timeline
                                     </span>
                                     <span
-                                        class="flex items-center gap-1 bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">
+                                        class="flex items-center gap-1 bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                                         <UIcon name="i-heroicons-currency-dollar" class="w-4 h-4" /> Budget
                                     </span>
                                 </div>
@@ -143,8 +144,11 @@
                 </section>
                 <section class="space-y-8"></section>
 
-            </div>
-        </UCard>
+                </div>
+
+                <QuickScrollButtons />
+            </UCard>
+        </div>
     </UContainer>
 </template>
 

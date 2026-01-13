@@ -1,7 +1,8 @@
 <template>
-    <UContainer class="m-2">
-        <UCard variant="soft" class="bg-white min-h-[297mm] mb-6  p-12">
-            <div class="space-y-20">
+    <UContainer class="m-0 px-0 sm:px-4 max-w-none">
+        <div class="w-full overflow-x-auto">
+            <UCard variant="soft" class="bg-white min-h-[297mm] mb-6 p-4 sm:p-12 text-sm sm:text-base">
+                <div class="space-y-12 sm:space-y-20">
 
                 <!-- Header -->
                 <header class="space-y-6 text-center relative">
@@ -100,7 +101,7 @@
 
                 <!-- Consultation Phase Details -->
                 <section class="space-y-16">
-                    <h2 class="text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
+                    <h2 class="text-xl sm:text-3xl font-bold text-[#002D72] border-b border-gray-300 pb-4 flex items-center gap-3">
                         <UIcon name="i-heroicons-chat-bubble-oval-left" class="w-8 h-8 text-[#002D72]" />
                         2. Implementation & Commercialization Phase
                     </h2>
@@ -111,8 +112,8 @@
                             class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden flex flex-col">
                             <NuxtImg src="/code-hero.jpg" class="h-48 w-full object-cover"
                                 alt="Business Consultation" />
-                            <div class="p-6 flex flex-col gap-4">
-                                <h3 class="text-xl font-semibold text-[#002D72] flex items-center gap-2">
+                            <div class="p-4 sm:p-6 flex flex-col gap-4">
+                                <h3 class="text-lg sm:text-xl font-semibold text-[#002D72] flex items-center gap-2">
                                     <UIcon name="i-heroicons-briefcase" class="w-6 h-6" /> 2.1 Development - Full "NICO Life Loyalty Platform" Build
                                 </h3>
                                 <ul class="space-y-2 text-gray-700">
@@ -145,13 +146,17 @@
                                     </li>
                                     <div class="space-y-4 mt-6">
                                         <div class="space-y-2">
-                                            <p class="text-base font-bold text-gray-700">Key Activities in Detail (Phase 2.1)</p>
-                                            <UTable :data="implementationItems" class="flex-1" />
+                                            <p class="text-sm sm:text-base font-bold text-gray-700">Key Activities in Detail (Phase 2.1)</p>
+                                            <div class="w-full overflow-x-auto">
+                                                <UTable :data="implementationItems" class="min-w-[640px]" />
+                                            </div>
                                         </div>
 
                                         <div class="space-y-2">
-                                            <p class="text-base font-bold text-gray-700">Deliverables in Detail (Phase 2.1)</p>
-                                            <UTable :data="implementationDeliverables" class="flex-1" />
+                                            <p class="text-sm sm:text-base font-bold text-gray-700">Deliverables in Detail (Phase 2.1)</p>
+                                            <div class="w-full overflow-x-auto">
+                                                <UTable :data="implementationDeliverables" class="min-w-[640px]" />
+                                            </div>
                                         </div>
 
                                         <!-- <div class="bg-blue-50 p-4 rounded-lg border border-blue-200 shadow-sm"> -->
@@ -162,15 +167,15 @@
                                 </ul>
                                 <div class="mt-4 flex gap-2 flex-wrap">
                                     <span
-                                        class="flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+                                        class="flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                                         <UIcon name="i-heroicons-check" class="w-4 h-4" /> Approved Output
                                     </span>
                                     <span
-                                        class="flex items-center gap-1 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
+                                        class="flex items-center gap-1 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                                         <UIcon name="i-heroicons-clock" class="w-4 h-4" /> Timeline
                                     </span>
                                     <span
-                                        class="flex items-center gap-1 bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">
+                                        class="flex items-center gap-1 bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                                         <UIcon name="i-heroicons-currency-dollar" class="w-4 h-4" /> Budget
                                     </span>
                                 </div>
@@ -182,8 +187,8 @@
                             class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden flex flex-col">
                             <NuxtImg src="/payment-hero.webp" class="h-48 w-full object-cover"
                                 alt="Program Planning" />
-                            <div class="p-6 flex flex-col gap-4">
-                                <h3 class="text-xl font-semibold text-[#002D72] flex items-center gap-2">
+                            <div class="p-4 sm:p-6 flex flex-col gap-4">
+                                <h3 class="text-lg sm:text-xl font-semibold text-[#002D72] flex items-center gap-2">
                                     <UIcon name="i-heroicons-pencil-square" class="w-6 h-6 text-[#002D72]" /> 2.2 Commercialisation & Integration
                                 </h3>
                                 <ul class="space-y-3 text-gray-700">
@@ -211,26 +216,30 @@
 
                                 <div class="space-y-4 mt-6">
                                     <div class="space-y-2">
-                                        <p class="text-base font-bold text-gray-700">Key Activities in Detail (Phase 2.2)</p>
-                                        <UTable :data="integrationItems" class="flex-1" />
+                                        <p class="text-sm sm:text-base font-bold text-gray-700">Key Activities in Detail (Phase 2.2)</p>
+                                        <div class="w-full overflow-x-auto">
+                                            <UTable :data="integrationItems" class="min-w-[640px]" />
+                                        </div>
                                     </div>
 
                                     <div class="space-y-2">
-                                        <p class="text-base font-bold text-gray-700">Deliverables in Detail (Phase 2.2)</p>
-                                        <UTable :data="integrationDeliverables" class="flex-1" />
+                                        <p class="text-sm sm:text-base font-bold text-gray-700">Deliverables in Detail (Phase 2.2)</p>
+                                        <div class="w-full overflow-x-auto">
+                                            <UTable :data="integrationDeliverables" class="min-w-[640px]" />
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="mt-4 flex gap-2 flex-wrap">
                                     <span
-                                        class="flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+                                        class="flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                                         <UIcon name="i-heroicons-check" class="w-4 h-4" /> Approved Output
                                     </span>
                                     <span
-                                        class="flex items-center gap-1 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
+                                        class="flex items-center gap-1 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                                         <UIcon name="i-heroicons-clock" class="w-4 h-4" /> Timeline
                                     </span>
                                     <span
-                                        class="flex items-center gap-1 bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">
+                                        class="flex items-center gap-1 bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                                         <UIcon name="i-heroicons-currency-dollar" class="w-4 h-4" /> Budget
                                     </span>
                                 </div>
@@ -242,7 +251,7 @@
                 <!-- Integration Note -->
                 <div class="bg-blue-50 rounded-xl p-4 border border-blue-200 flex items-center gap-3">
                     <UIcon name="i-heroicons-puzzle-piece" class="w-6 h-6 text-blue-600 shrink-0" />
-                    <p class="text-gray-700 text-lg sm:text-lg md:text-lg">
+                    <p class="text-gray-700 text-sm sm:text-lg md:text-lg">
                         <strong>Total Project Cost:
                                         
                                 MWK151,927,500.00</strong> (All Project Phases Combined)
@@ -251,8 +260,11 @@
 
                 <section class="space-y-8"></section>
 
-            </div>
-        </UCard>
+                </div>
+
+                <QuickScrollButtons />
+            </UCard>
+        </div>
     </UContainer>
 </template>
 

@@ -2,13 +2,13 @@
   <div class="relative min-h-screen flex flex-col items-center justify-center">
     <component :is="currentStep.component" class="w-full min-h-screen" />
 
-    <div class="absolute bottom-8 flex gap-4 mt-4 mb-2">
+    <div class="absolute bottom-8 left-0 right-0 px-4 flex flex-col sm:flex-row gap-3 sm:gap-4 mt-4 mb-2 items-stretch sm:items-center justify-center">
       <UButton
         v-if="currentStepIndex > 0"
         size="sm"
         color="text-[#002D72]"
         variant="outline"
-        class="px-6 py-3 text-[#002D72] sm:text-base md:text-lg rounded-lg hover:bg-gray-400 transition flex items-center gap-2"
+        class="w-full sm:w-auto px-6 py-3 text-[#002D72] text-sm sm:text-base md:text-lg rounded-lg hover:bg-gray-400 transition flex items-center justify-center gap-2"
         @click="prevStep"
       >
         <UIcon name="i-heroicons-arrow-left" class="w-5 h-5" />
@@ -20,15 +20,15 @@
         size="lg"
         color="neutral"
         variant="solid"
-        class="px-6 py-3 bg-[#002D72] text-white rounded-lg hover:bg-blue-800 transition flex items-center gap-2"
+        class="w-full sm:w-auto px-6 py-3 bg-[#002D72] text-white rounded-lg hover:bg-blue-800 transition flex items-center justify-center gap-2"
         @click="nextStep"
       >
-        <span v-if="currentStepIndex === 0" class="flex items-center gap-2 sm:text-base md:text-lg">
+        <span v-if="currentStepIndex === 0" class="flex items-center gap-2 text-sm sm:text-base md:text-lg">
           <UIcon name="i-heroicons-play" class="w-5 h-5" />
           Start
         </span>
 
-        <span v-else class="flex items-center gap-2 sm:text-base md:text-lg">
+        <span v-else class="flex items-center gap-2 text-sm sm:text-base md:text-lg">
           Next
           <UIcon name="i-heroicons-arrow-right" class="w-5 h-5" />
         </span>
@@ -39,9 +39,9 @@
           size="lg"
           color="neutral"
           variant="outline"
-          class="px-6 py-3 bg-white text-[#002D72] rounded-lg hover:bg-blue-50 transition flex items-center gap-2"
+          class="w-full sm:w-auto px-6 py-3 bg-white text-[#002D72] rounded-lg hover:bg-blue-50 transition flex items-center justify-center gap-2"
         >
-          <span class="flex items-center gap-2 sm:text-base md:text-lg">
+          <span class="flex items-center gap-2 text-sm sm:text-base md:text-lg">
             <UIcon name="i-heroicons-play" class="w-5 h-5" />
             Watch Demo
           </span>
