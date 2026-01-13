@@ -250,7 +250,7 @@ const team = [
   {
     name: "Zikani Mwase Nyirenda",
     role: "Lead Full-Stack Architect & Engineer",
-    image: "/team/zikani.jpeg",
+    image: "/Team/zikani.jpeg",
     bio: "Zikani leads full-stack architecture and engineering efforts, driving the design and implementation of scalable, robust software solutions.",
     social: { linkedin: "https://linkedin.com/in/zikani03",
       github: "https://github.com/zikani03"
@@ -259,21 +259,21 @@ const team = [
   {
     name: "Christina Namalomba",
     role: "Business Development Manager",
-    image: "/team/tina.jpeg",
+    image: "/Team/tina.jpeg",
     bio: "Christina leads client acquisition and partnership development, driving revenue growth through strategic market analysis, stakeholder engagement, and tailored business solutions.",
     social: { linkedin: "https://linkedin.com/christinamnamalomba" }
   },
   {
     name: "Gift Chimangeni",
     role: "AI Projects & Data Architecture Manager",
-    image: "/team/gift.jpeg",
+    image: "/Team/gift.jpeg",
     bio: "Gift oversees AI project delivery and data architecture design, ensuring scalable, high-performance data systems that support advanced analytics, machine learning, and business intelligence initiatives.",
     social: { linkedin: "https://linkedin.com/gift-chimangeni" }
   },
   {
     name: "Paul Namalomba",
     role: "Chief Innovation Officer & Lead Backend Engineer",
-    image: "/team/paul.jpg",
+    image: "/Team/paul.jpg",
     bio: "Paul drives innovation strategy and leads backend engineering, designing robust, secure, and scalable systems that power mission-critical applications and emerging digital solutions.",
     social: {
       linkedin: "https://linkedin.com/paulnamalomba",
@@ -283,35 +283,35 @@ const team = [
   {
     name: "Emma Malonda",
     role: "Data Science Manager & Lead Data Analyst",
-    image: "/team/emma.jpeg",
+    image: "/Team/emma.jpeg",
     bio: "Emma leads data science and analytics initiatives, transforming complex datasets into actionable insights through advanced modeling, statistical analysis, and data-driven reporting.",
     social: { linkedin: "https://linkedin.com/emma-malonda" }
   },
   {
     name: "Chadwick Chihana",
     role: "Finance Manager",
-    image: "/team/chadwick.jpg",
+    image: "/Team/chadwick.jpg",
     bio: "Chadwick manages financial planning, budgeting, and compliance, providing strategic financial oversight to support sustainable growth, operational efficiency, and informed decision-making.",
     social: { linkedin: "https://linkedin.com/chadwick-chihana-796b33154" }
   },
   {
     name: "Andy Kewo",
     role: "Legal Manager",
-    image: "/team/andy.jpeg",
+    image: "/Team/andy.jpeg",
     bio: "Andy oversees legal and regulatory matters, ensuring organizational compliance, contract governance, and risk mitigation across all business operations.",
     social: { linkedin: "https://linkedin.com/andy-kewo-550550242" }
   },
   {
     name: "Diana Nguluwe",
     role: "Digital Marketing Manager",
-    image: "/team/diana.jpg",
+    image: "/Team/diana.jpg",
     bio: "Diana leads digital marketing strategy, managing brand presence, campaigns, and audience engagement across digital channels to drive visibility, growth, and customer acquisition.",
     social: { linkedin: "linkedin.com/in/diane-nguluwe-6b4763289" }
   },
   {
     name: "Dylan Chigowo",
     role: "Operations Manager",
-    image: "/team/dylan.jpg",
+    image: "/Team/dylan.jpg",
     bio: "Dylan oversees day-to-day operations, optimizing processes, coordinating teams, and ensuring efficient service delivery aligned with organizational objectives.",
     social: { linkedin: "linkedin.com/in/dylan-chigowo-4a2441256" }
   }
