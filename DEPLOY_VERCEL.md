@@ -134,4 +134,11 @@ With this setup, a single git push can deploy both projects (Vercel builds each 
 - **404 after deploy**: the page file path must exactly match the URL path. For example,
   `app/pages/projects/nico-life-loyalty/index.vue` → `/projects/nico-life-loyalty/`.
 - **Case sensitivity**: URLs are case-sensitive; keep everything lowercase.
-- **Contact form / email config**: if your server route needs SMTP credentials, configure them as Vercel Environment Variables (Project → Settings → Environment Variables). The site can still deploy without them, but form sending may fail.
+- **Contact form / email config**: the `/api/contact` route uses SMTP (via Nodemailer). Configure these as Vercel Environment Variables (Project → Settings → Environment Variables). The site can still deploy without them, but the contact form will return `503 Email service is not configured` until you set them.
+   - `SMTP_HOST` (e.g. `smtp.zoho.com`)
+   - `SMTP_PORT` (usually `587` for STARTTLS, or `465` for TLS)
+   - `SMTP_SECURE` (`true` for port `465`, `false` for `587`)
+   - `SMTP_USER` (SMTP username)
+   - `SMTP_PASS` (SMTP password / app password)
+   - `SMTP_FROM` (the sender address, e.g. `ComputeMore Website <no-reply@computemore.com>`)
+   - `CONTACT_TO` (destination inbox, defaults to `tech@computemore.com`)
