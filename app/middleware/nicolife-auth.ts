@@ -1,5 +1,6 @@
 export default defineNuxtRouteMiddleware(async (to) => {
-  if (to.path !== '/nicolife') return
+  const normalizedPath = to.path.replace(/\/+$/, '')
+  if (normalizedPath !== '/nicolife') return
 
   const authorized = useState<boolean>('nicolifeAuthorized', () => false)
 
