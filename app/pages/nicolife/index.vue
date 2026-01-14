@@ -1,6 +1,19 @@
 <template>
-  <div>
-    <NicolifeFlow v-if="isAuthorized" />
+  <div class="relative">
+    <div v-if="isAuthorized">
+      <!-- Lock Button in top right -->
+      <div class="absolute top-4 right-4 z-50">
+        <UButton
+          size="sm"
+          color="white"
+          variant="solid"
+          icon="i-heroicons-lock-closed"
+          label="Lock Page"
+          @click="lockPage"
+        />
+      </div>
+      <NicolifeFlow />
+    </div>
 
     <div
       v-else
@@ -43,6 +56,12 @@ definePageMeta({
 const password = ref('')
 const error = ref(false)
 const isAuthorized = useState<boolean>('nicolifeAuthorized', () => false)
+
+async function lockPage() {
+  await $fetch('/api/nicolife/lock', { method: 'POST' })
+  isAuthorized.value = false
+  password.value = ''
+}
 
 async function submitPassword() {
   error.value = false
